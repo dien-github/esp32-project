@@ -1,0 +1,225 @@
+INFO: Using IDF_PATH '/home/grace/esp/esp-idf' for installation.
+Detecting the Python interpreter
+Checking "python3" ...
+Python 3.12.3
+"python3" has been detected
+Checking Python compatibility
+Installing ESP-IDF tools
+Updating /home/grace/.espressif/idf-env.json
+Selected targets are: esp32
+Current system platform: linux-amd64
+Installing tools: xtensa-esp-elf-gdb, xtensa-esp-elf, esp32ulp-elf, openocd-esp32, esp-rom-elfs
+Installing xtensa-esp-elf-gdb@16.2_20250324
+Downloading https://github.com/espressif/binutils-gdb/releases/download/esp-gdb-v16.2_20250324/xtensa-esp-elf-gdb-16.2_20250324-x86_64-linux-gnu.tar.gz
+Destination: /home/grace/.espressif/dist/xtensa-esp-elf-gdb-16.2_20250324-x86_64-linux-gnu.tar.gz.tmp
+Done
+Extracting /home/grace/.espressif/dist/xtensa-esp-elf-gdb-16.2_20250324-x86_64-linux-gnu.tar.gz to /home/grace/.espressif/tools/xtensa-esp-elf-gdb/16.2_20250324
+Installing xtensa-esp-elf@esp-14.2.0_20241119
+Downloading https://github.com/espressif/crosstool-NG/releases/download/esp-14.2.0_20241119/xtensa-esp-elf-14.2.0_20241119-x86_64-linux-gnu.tar.xz
+Destination: /home/grace/.espressif/dist/xtensa-esp-elf-14.2.0_20241119-x86_64-linux-gnu.tar.xz.tmp
+Done
+Extracting /home/grace/.espressif/dist/xtensa-esp-elf-14.2.0_20241119-x86_64-linux-gnu.tar.xz to /home/grace/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119
+Installing esp32ulp-elf@2.38_20240113
+Downloading https://github.com/espressif/binutils-gdb/releases/download/esp32ulp-elf-2.38_20240113/esp32ulp-elf-2.38_20240113-linux-amd64.tar.gz
+Destination: /home/grace/.espressif/dist/esp32ulp-elf-2.38_20240113-linux-amd64.tar.gz.tmp
+Done
+Extracting /home/grace/.espressif/dist/esp32ulp-elf-2.38_20240113-linux-amd64.tar.gz to /home/grace/.espressif/tools/esp32ulp-elf/2.38_20240113
+Installing openocd-esp32@v0.12.0-esp32-20250707
+Downloading https://github.com/espressif/openocd-esp32/releases/download/v0.12.0-esp32-20250707/openocd-esp32-linux-amd64-0.12.0-esp32-20250707.tar.gz
+Destination: /home/grace/.espressif/dist/openocd-esp32-linux-amd64-0.12.0-esp32-20250707.tar.gz.tmp
+Done
+Extracting /home/grace/.espressif/dist/openocd-esp32-linux-amd64-0.12.0-esp32-20250707.tar.gz to /home/grace/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707
+Installing esp-rom-elfs@20241011
+Downloading https://github.com/espressif/esp-rom-elfs/releases/download/20241011/esp-rom-elfs-20241011.tar.gz
+Destination: /home/grace/.espressif/dist/esp-rom-elfs-20241011.tar.gz.tmp
+Done
+Extracting /home/grace/.espressif/dist/esp-rom-elfs-20241011.tar.gz to /home/grace/.espressif/tools/esp-rom-elfs/20241011
+Installing Python environment and packages
+Creating a new Python environment in /home/grace/.espressif/python_env/idf5.5_py3.12_env
+Downloading https://dl.espressif.com/dl/esp-idf/espidf.constraints.v5.5.txt
+Destination: /home/grace/.espressif/espidf.constraints.v5.5.txt.tmp
+Done
+Upgrading pip...
+Requirement already satisfied: pip in /home/grace/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Downloading pip-25.2-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-25.2-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 3.3 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-25.2
+Upgrading setuptools...
+Collecting setuptools
+  Downloading setuptools-71.0.0-py3-none-any.whl.metadata (6.5 kB)
+Downloading setuptools-71.0.0-py3-none-any.whl (908 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 908.4/908.4 kB 4.7 MB/s  0:00:00
+Installing collected packages: setuptools
+Successfully installed setuptools-71.0.0
+Installing Python packages
+ Constraint file: /home/grace/.espressif/espidf.constraints.v5.5.txt
+ Requirement files:
+  - /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt
+Looking in indexes: https://pypi.org/simple, https://dl.espressif.com/pypi
+Ignoring importlib_metadata: markers 'python_version < "3.8"' don't match your environment
+Requirement already satisfied: setuptools in /home/grace/.espressif/python_env/idf5.5_py3.12_env/lib/python3.12/site-packages (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 7)) (71.0.0)
+Collecting packaging (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 8))
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting click (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 11))
+  Downloading https://dl.espressif.com/pypi/click/click-8.1.8-py3-none-any.whl (98 kB)
+Collecting pyserial (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 12))
+  Downloading https://dl.espressif.com/pypi/pyserial/pyserial-3.5-py2.py3-none-any.whl (90 kB)
+Collecting cryptography (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 13))
+  Downloading cryptography-44.0.3-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+Collecting pyparsing (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 14))
+  Downloading pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+Collecting pyelftools (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 15))
+  Downloading https://dl.espressif.com/pypi/pyelftools/pyelftools-0.32-py3-none-any.whl (188 kB)
+Collecting idf-component-manager~=2.2 (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading idf_component_manager-2.4.0-py3-none-any.whl.metadata (9.4 kB)
+Collecting esp-coredump (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 17))
+  Downloading esp_coredump-1.14.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting esptool (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading esptool-4.10.0.tar.gz (473 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting esp-idf-kconfig (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 19))
+  Downloading https://dl.espressif.com/pypi/esp-idf-kconfig/esp_idf_kconfig-2.5.0-py3-none-any.whl (143 kB)
+Collecting esp-idf-monitor (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 20))
+  Downloading esp_idf_monitor-1.8.0-py3-none-any.whl.metadata (11 kB)
+Collecting esp-idf-nvs-partition-gen (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 21))
+  Downloading esp_idf_nvs_partition_gen-0.1.9-py3-none-any.whl.metadata (14 kB)
+Collecting esp-idf-size (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 22))
+  Downloading esp_idf_size-1.7.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting esp-idf-diag (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 23))
+  Downloading esp_idf_diag-0.2.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting esp-idf-panic-decoder (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 24))
+  Downloading esp_idf_panic_decoder-1.4.1-py3-none-any.whl.metadata (16 kB)
+Collecting pyclang (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 25))
+  Downloading pyclang-0.6.3-py3-none-any.whl.metadata (2.7 kB)
+Collecting construct (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 26))
+  Downloading https://dl.espressif.com/pypi/construct/construct-2.10.70-py3-none-any.whl (63 kB)
+Collecting rich (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 27))
+  Downloading rich-14.1.0-py3-none-any.whl.metadata (18 kB)
+Collecting psutil (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 28))
+  Downloading psutil-7.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (23 kB)
+Collecting freertos_gdb (from -r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 31))
+  Downloading https://dl.espressif.com/pypi/freertos-gdb/freertos_gdb-1.0.4-py3-none-any.whl (14 kB)
+Collecting colorama (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/colorama/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting ruamel.yaml (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading ruamel.yaml-0.18.15-py3-none-any.whl.metadata (25 kB)
+Collecting requests (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting requests-file (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/requests-file/requests_file-2.1.0-py2.py3-none-any.whl (4.2 kB)
+Collecting requests-toolbelt (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/requests-toolbelt/requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Collecting tqdm (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/tqdm/tqdm-4.67.1-py3-none-any.whl (78 kB)
+Collecting jsonref (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/jsonref/jsonref-1.1.0-py3-none-any.whl (9.4 kB)
+Collecting pydantic (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading pydantic-2.11.9-py3-none-any.whl.metadata (68 kB)
+Collecting pydantic-core (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading pydantic_core-2.39.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting pydantic-settings (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading pydantic_settings-2.11.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting truststore (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)
+Collecting cffi>=1.12 (from cryptography->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 13))
+  Downloading cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Collecting pygdbmi>=0.9.0.2 (from esp-coredump->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 17))
+  Downloading https://dl.espressif.com/pypi/pygdbmi/pygdbmi-0.11.0.0-py3-none-any.whl (21 kB)
+Collecting bitstring!=4.2.0,>=3.1.6 (from esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/bitstring/bitstring-4.3.1-py3-none-any.whl (71 kB)
+Collecting ecdsa>=0.16.0 (from esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/ecdsa/ecdsa-0.19.1-py2.py3-none-any.whl (150 kB)
+Collecting reedsolo<1.8,>=1.5.3 (from esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/reedsolo/reedsolo-1.7.0-py3-none-any.whl (32 kB)
+Collecting PyYAML>=5.1 (from esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/pyyaml/PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (767 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 767.5/767.5 kB 2.3 MB/s  0:00:00
+Collecting intelhex (from esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/intelhex/intelhex-2.3.0-py2.py3-none-any.whl (50 kB)
+Collecting argcomplete>=3 (from esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/argcomplete/argcomplete-3.6.2-py3-none-any.whl (43 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 27))
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 27))
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting bitarray<4.0,>=3.0.0 (from bitstring!=4.2.0,>=3.1.6->esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading bitarray-3.7.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (34 kB)
+Collecting pycparser (from cffi>=1.12->cryptography->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 13))
+  Downloading pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+Collecting six>=1.9.0 (from ecdsa>=0.16.0->esptool->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 18))
+  Downloading https://dl.espressif.com/pypi/six/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 27))
+  Downloading https://dl.espressif.com/pypi/mdurl/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Collecting annotated-types>=0.6.0 (from pydantic->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/annotated-types/annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Collecting pydantic-core (from idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading pydantic_core-2.33.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting typing-extensions>=4.12.2 (from pydantic->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting python-dotenv>=0.21.0 (from pydantic-settings->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading python_dotenv-1.1.1-py3-none-any.whl.metadata (24 kB)
+Collecting charset_normalizer<4,>=2 (from requests->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading charset_normalizer-3.4.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/idna/idna-3.10-py3-none-any.whl (70 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading https://dl.espressif.com/pypi/urllib3/urllib3-1.26.20-py2.py3-none-any.whl (144 kB)
+Collecting certifi>=2017.4.17 (from requests->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml->idf-component-manager~=2.2->-r /home/grace/esp/esp-idf/tools/requirements/requirements.core.txt (line 16))
+  Downloading ruamel.yaml.clib-0.2.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Downloading idf_component_manager-2.4.0-py3-none-any.whl (172 kB)
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading cryptography-44.0.3-cp39-abi3-manylinux_2_34_x86_64.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 7.8 MB/s  0:00:00
+Downloading pyparsing-3.2.5-py3-none-any.whl (113 kB)
+Downloading esp_coredump-1.14.0-py3-none-any.whl (42 kB)
+Downloading esp_idf_monitor-1.8.0-py3-none-any.whl (54 kB)
+Downloading esp_idf_panic_decoder-1.4.1-py3-none-any.whl (21 kB)
+Downloading esp_idf_nvs_partition_gen-0.1.9-py3-none-any.whl (22 kB)
+Downloading esp_idf_size-1.7.1-py3-none-any.whl (82 kB)
+Downloading esp_idf_diag-0.2.0-py3-none-any.whl (23 kB)
+Downloading pyclang-0.6.3-py3-none-any.whl (12 kB)
+Downloading rich-14.1.0-py3-none-any.whl (243 kB)
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 8.5 MB/s  0:00:00
+Downloading psutil-7.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (291 kB)
+Downloading bitarray-3.7.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (332 kB)
+Downloading cffi-2.0.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+Downloading pydantic-2.11.9-py3-none-any.whl (444 kB)
+Downloading pydantic_core-2.33.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 9.8 MB/s  0:00:00
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+Downloading pydantic_settings-2.11.0-py3-none-any.whl (48 kB)
+Downloading python_dotenv-1.1.1-py3-none-any.whl (20 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (151 kB)
+Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+Downloading ruamel.yaml-0.18.15-py3-none-any.whl (119 kB)
+Downloading ruamel.yaml.clib-0.2.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (753 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 753.1/753.1 kB 5.3 MB/s  0:00:00
+Downloading truststore-0.10.4-py3-none-any.whl (18 kB)
+Building wheels for collected packages: esptool
+  Building wheel for esptool (pyproject.toml) ... done
+  Created wheel for esptool: filename=esptool-4.10.0-py3-none-any.whl size=596819 sha256=da36ac797f7f3c555fe522a7386ea8353268a88ab004a93b3b034c2c25c99b20
+  Stored in directory: /home/grace/.cache/pip/wheels/e5/44/e6/deeee930e9765d0c2c682157f5e4ee0f3476441353a14c357d
+Successfully built esptool
+Installing collected packages: reedsolo, pyserial, pygdbmi, pyelftools, intelhex, bitarray, urllib3, typing-extensions, truststore, tqdm, six, ruamel.yaml.clib, PyYAML, python-dotenv, pyparsing, pygments, pycparser, pyclang, psutil, packaging, mdurl, jsonref, idna, freertos_gdb, esp-idf-panic-decoder, esp-idf-kconfig, construct, colorama, click, charset_normalizer, certifi, bitstring, argcomplete, annotated-types, typing-inspection, ruamel.yaml, requests, pydantic-core, markdown-it-py, ecdsa, cffi, rich, requests-toolbelt, requests-file, pydantic, cryptography, pydantic-settings, esptool, esp-idf-size, esp-idf-nvs-partition-gen, esp-idf-diag, idf-component-manager, esp-coredump, esp-idf-monitor
+Successfully installed PyYAML-6.0.2 annotated-types-0.7.0 argcomplete-3.6.2 bitarray-3.7.1 bitstring-4.3.1 certifi-2025.8.3 cffi-2.0.0 charset_normalizer-3.4.3 click-8.1.8 colorama-0.4.6 construct-2.10.70 cryptography-44.0.3 ecdsa-0.19.1 esp-coredump-1.14.0 esp-idf-diag-0.2.0 esp-idf-kconfig-2.5.0 esp-idf-monitor-1.8.0 esp-idf-nvs-partition-gen-0.1.9 esp-idf-panic-decoder-1.4.1 esp-idf-size-1.7.1 esptool-4.10.0 freertos_gdb-1.0.4 idf-component-manager-2.4.0 idna-3.10 intelhex-2.3.0 jsonref-1.1.0 markdown-it-py-4.0.0 mdurl-0.1.2 packaging-25.0 psutil-7.1.0 pyclang-0.6.3 pycparser-2.23 pydantic-2.11.9 pydantic-core-2.33.2 pydantic-settings-2.11.0 pyelftools-0.32 pygdbmi-0.11.0.0 pygments-2.19.2 pyparsing-3.2.5 pyserial-3.5 python-dotenv-1.1.1 reedsolo-1.7.0 requests-2.32.5 requests-file-2.1.0 requests-toolbelt-1.0.0 rich-14.1.0 ruamel.yaml-0.18.15 ruamel.yaml.clib-0.2.14 six-1.17.0 tqdm-4.67.1 truststore-0.10.4 typing-extensions-4.15.0 typing-inspection-0.4.1 urllib3-1.26.20
+All done! You can now run:
+
+  . ./export.sh
