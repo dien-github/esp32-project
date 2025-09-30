@@ -1,3 +1,5 @@
+<!-- TODO: Add CI badge here after workflow created -->
+
 # MY PROJECT
 ESP32 PROJECT
 
