@@ -1,0 +1,84 @@
+Executing action: monitor
+Serial port /dev/ttyUSB0
+Connecting..........
+Detecting chip type... ESP32
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+Running idf_monitor in directory /home/grace/esp/blink
+Executing "/home/grace/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/grace/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/grace/esp/blink/build/blink.elf /home/grace/esp/blink/build/bootloader/bootloader.elf --timestamps -m '/home/grace/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/grace/esp/esp-idf/tools/idf.py'"...
+2025-09-26 16:37:10 ets Jul 29 2019 12:21:46
+2025-09-26 16:37:10 
+2025-09-26 16:37:10 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+2025-09-26 16:37:10 configsip: 0, SPIWP:0xee
+2025-09-26 16:37:10 clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+2025-09-26 16:37:10 mode:DIO, clock div:2
+2025-09-26 16:37:10 load:0x3fff0030,len:6380
+2025-09-26 16:37:10 ho 0 tail 12 room 4
+2025-09-26 16:37:10 load:0x40078000,len:15916
+2025-09-26 16:37:10 load:0x40080400,len:3860
+[0m2025-09-26 16:37:10 --- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/home/grace/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+entry 0x40080638
+[0m2025-09-26 16:37:10 --- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/grace/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+2025-09-26 16:37:10 [0;32mI (29) boot: compile time Sep 25 2025 19:53:52[0m
+2025-09-26 16:37:10 [0;32mI (29) boot: Multicore bootloader[0m
+2025-09-26 16:37:10 [0;32mI (31) boot: chip revision: v3.1[0m
+2025-09-26 16:37:10 [0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+2025-09-26 16:37:10 [0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+2025-09-26 16:37:10 [0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+2025-09-26 16:37:10 [0;32mI (44) boot: Enabling RNG early entropy source...[0m
+2025-09-26 16:37:10 [0;32mI (49) boot: Partition Table:[0m
+2025-09-26 16:37:10 [0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+2025-09-26 16:37:10 [0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+2025-09-26 16:37:10 [0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+2025-09-26 16:37:10 [0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+2025-09-26 16:37:10 [0;32mI (77) boot: End of partition table[0m
+2025-09-26 16:37:10 [0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07cf8h ( 31992) map[0m
+2025-09-26 16:37:10 [0;32mI (99) esp_image: segment 1: paddr=00017d20 vaddr=3ffb0000 size=02208h (  8712) load[0m
+2025-09-26 16:37:10 [0;32mI (102) esp_image: segment 2: paddr=00019f30 vaddr=40080000 size=060e8h ( 24808) load[0m
+2025-09-26 16:37:10 [0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=107e4h ( 67556) map[0m
+2025-09-26 16:37:10 [0;32mI (136) esp_image: segment 4: paddr=0003080c vaddr=400860e8 size=06a74h ( 27252) load[0m
+2025-09-26 16:37:10 [0;32mI (147) esp_image: segment 5: paddr=00037288 vaddr=50000000 size=00020h (    32) load[0m
+2025-09-26 16:37:10 [0;32mI (153) boot: Loaded app from partition at offset 0x10000[0m
+2025-09-26 16:37:10 [0;32mI (153) boot: Disabling RNG early entropy source...[0m
+2025-09-26 16:37:10 [0;32mI (165) cpu_start: Multicore app[0m
+2025-09-26 16:37:10 [0;32mI (173) cpu_start: Pro cpu start user code[0m
+2025-09-26 16:37:10 [0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+2025-09-26 16:37:10 [0;32mI (173) app_init: Application information:[0m
+2025-09-26 16:37:10 [0;32mI (173) app_init: Project name:     blink[0m
+2025-09-26 16:37:10 [0;32mI (177) app_init: App version:      1[0m
+2025-09-26 16:37:10 [0;32mI (180) app_init: Compile time:     Sep 25 2025 19:53:27[0m
+2025-09-26 16:37:10 [0;32mI (186) app_init: ELF file SHA256:  50a6ad202...[0m
+2025-09-26 16:37:10 [0;32mI (190) app_init: ESP-IDF:          v5.5.1[0m
+2025-09-26 16:37:10 [0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+2025-09-26 16:37:10 [0;32mI (197) efuse_init: Max chip rev:     v3.99 [0m
+2025-09-26 16:37:10 [0;32mI (201) efuse_init: Chip rev:         v3.1[0m
+2025-09-26 16:37:10 [0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+2025-09-26 16:37:10 [0;32mI (212) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+2025-09-26 16:37:10 [0;32mI (217) heap_init: At 3FFB2A70 len 0002D590 (181 KiB): DRAM[0m
+2025-09-26 16:37:10 [0;32mI (222) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+2025-09-26 16:37:10 [0;32mI (227) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+2025-09-26 16:37:10 [0;32mI (233) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+2025-09-26 16:37:10 [0;32mI (239) spi_flash: detected chip: generic[0m
+2025-09-26 16:37:10 [0;32mI (242) spi_flash: flash io: dio[0m
+2025-09-26 16:37:10 [0;33mW (245) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+2025-09-26 16:37:10 [0;32mI (258) main_task: Started on CPU0[0m
+2025-09-26 16:37:10 [0;32mI (268) main_task: Calling app_main()[0m
+2025-09-26 16:37:10 [0;32mI (268) example: Example configured to blink GPIO LED![0m
+2025-09-26 16:37:10 [0;32mI (268) example: Turning the LED OFF![0m
+2025-09-26 16:37:11 [0;32mI (1268) example: Turning the LED ON![0m
+2025-09-26 16:37:12 [0;32mI (2268) example: Turning the LED OFF![0m
+2025-09-26 16:37:13 [0;32mI (3268) example: Turning the LED ON![0m
+2025-09-26 16:37:14 [0;32mI (4268) example: Turning the LED OFF![0m
+2025-09-26 16:37:15 [0;32mI (5268) example: Turning the LED ON![0m
+2025-09-26 16:37:16 [0;32mI (6268) example: Turning the LED OFF![0m
+2025-09-26 16:37:17 [0;32mI (7268) example: Turning the LED ON![0m
+2025-09-26 16:37:18 [0;32mI (8268) example: Turning the LED OFF![0m
+2025-09-26 16:37:19 [0;32mI (9268) example: Turning the LED ON![0m
+2025-09-26 16:37:20 [0;32mI (10268) example: Turning the LED OFF![0m
+2025-09-26 16:37:21 [0;32mI (11268) example: Turning the LED ON![0m
+2025-09-26 16:37:22 [0;32mI (12268) example: Turning the LED OFF![0m
+2025-09-26 16:37:23 [0;32mI (13268) example: Turning the LED ON![0m
+2025-09-26 16:37:24 [0;32mI (14268) example: Turning the LED OFF![0m
+2025-09-26 16:37:25 [0;32mI (15268) example: Turning the LED ON![0m
+[0m
