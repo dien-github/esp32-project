@@ -7,7 +7,7 @@ ESP32 PROJECT
 
 ## Setup (Linux/WSL)
 git clone 
-cd project
+cd esp32-project
 # cài ép-idf (nếu chưa)
 cd esp-idf && ./install.sh && . ./export.sh
 
